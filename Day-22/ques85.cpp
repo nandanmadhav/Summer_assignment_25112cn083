@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+string str;
+ cout << "Enter a string: ";
+getline(cin, str);
+
+string rev = string(str.rbegin(), str.rend());
+
+ if (str == rev)
+ cout << "Palindrome string" << endl;
+else
+cout << "Not a palindrome string" << endl;
+return 0;
+}
